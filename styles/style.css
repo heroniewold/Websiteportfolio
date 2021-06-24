@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Indie+Flower&display=swap');
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #7CC1AC;
+    color: white;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+
+}
+header {
+    float: right;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    background-color: #E27D5F;
+    display: block;
+    
+}
+aside {
+    width: 20%;
+    float: left;
+    background-color: #E27D5F;
+    position: fixed;
+    height: 100%;
+    padding-left: 1%;
+}
+main {
+    margin-left: 25%;
+    width: 60%;
+    margin-top: 0;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+h1 {
+    margin: 0;
+}
+#title {
+    font-family:'Indie Flower', cursive;
+    margin-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#warning {
+    margin: 0;
+    color: red;
+}
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+img {
+    width: 400px;
+    height: auto;
+}
+#handtrackcircles {
+    width: 80%;
+    height: 400px;
+}
+
+#arvr {
+    margin-top: 100px;
+}
+#numbertwo {
+    margin: 0;
+    padding-top: 100px;
+}
+li {
+    list-style-type: none;
+}

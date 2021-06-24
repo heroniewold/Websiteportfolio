@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<HTML lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>HCI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">HCI Portfolio by Hero Niewold (19064446, CMD 2a.02)</h1>
+    </header>
+    <aside>
+        <a href="index.html"><h2>Home</h2></a>
+        <a href="topic.html"><h2>Topic assignments</h2></a>
+        <ul>
+            <a href="topic.html#arvr"><li>AR & VR</li></a>
+            <a href="topic.html#w"><li>Wearables</li></a>
+            <a href="topic.html#ac"><li>Artifical Creatures</li></a>
+            <a href="topic.html#pi"><li>Playful Interaction</li></a>
+        </ul>
+
+        <a href="workshop.html"><h2>Workshops</h2></a>
+        <ul>
+            <a href="workshop.html#aframe"><li>A-Frame</li></a>
+            <a href="workshop.html#unreal"><li>Unreal Engine</li></a>
+            <a href="workshop.html#arduino"><li>Arduino</li></a>
+            <a href="workshop.html#computervision"><li>Computer Vision</li></a>
+        </ul>
+
+        <a href="guestlec.html"><h2>Guest lecture</h2></a>
+        <ul>
+            <li>Assignment</li>
+            <li>Reflect</li>
+        </ul>
+    
+        <a href="labweek.html"><h2>Labweeks</h2></a>
+        <ul>
+            <li>Product</li>
+            <li>Proces</li>
+            <li>Reflect</li>
+        </ul>
+    </aside>
+    <main>
+    <p id="warning">warning, page needs to load some code, please wait a couple of seconds</p><br />
+    <h1 id="aframe">A-Frame</h1><br />
+    <a href="https://heroniewold.github.io/AssignmentHC1/">Link to A-Frame exercise</a>
+
+    <p>A lot of text talking about this exercise</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i93DWCBOsDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="vp1Wfp1M" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1624562545&f=Wfp1MNkLgcjLBNb9wfP8rQ&d=0&m=p&r=360p&volume=0&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
+
+    <hr />
+    <h1 id="unreal">Unreal engine</h1>
+    <p>A lot of text talking about this exercise</p>
+    <img src="images/Unreal engine1.png" alt="code in unreal engine" />
+    <img src="images/Unreal engine2.png" alt="a banana in unreal engine" />
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/gpQFJb9zjAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="vp1LZsLJ" title="Video Player" width="500" height="300" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1624550108&f=LZsLJhY4EiheimDfA0qeJQ&d=0&m=p&r=360p+480p&volume=0&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
+    <hr />
+    <h1 id="arduino">Arduino</h1>
+        <p>A lot of text talking about arduino</p>
+        <h2>Opdracht 3b</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5vbUXPXlC0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+            void setup() {<br />
+              pinMode(13, OUTPUT);<br />
+              pinMode(12, OUTPUT);<br />
+            }<br />
+            void loop() {<br />
+              digitalWrite(13, HIGH);   <br />
+              delay(1000);           <br />
+              digitalWrite(13, LOW);   <br />
+              delay(1000);           <br />
+              digitalWrite(12, HIGH);    <br />
+              delay(1000);           <br />
+              digitalWrite(12, LOW);   <br />
+              delay(1000);              <br />
+            }</p>
+        <h2>Opdracht 4c</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5CDPelaUwdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>int greenLedPin = 10;    <br />
+            int redLedPin = 9;<br />
+            
+            void setup() {<br />
+             pinMode(greenLedPin, OUTPUT);<br />
+             pinMode(redLedPin, OUTPUT);<br />
+            }<br />
+            
+            void loop() {<br />
+              for (int brightness=0; brightness &lt;256; brightness++){<br />
+                analogWrite(greenLedPin, brightness);<br />
+                delay(10);<br />
+              }<br />
+              for (int brightness=256; brightness >0; brightness--){<br />
+                analogWrite(redLedPin, brightness);<br />
+                delay(10);<br />
+              }<br />
+            }</p>
+        <h2>Exercise 6c</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LW_LVXl-QDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>float sensorValue = 0; <br />
+            int sensorPin = A0; <br />
+            int greenLedPin = 10;<br />
+            int yellowLedPin = 9;<br />
+            
+            void setup() {<br />
+             pinMode(sensorPin, INPUT);<br />
+             pinMode(greenLedPin, OUTPUT);<br />
+             pinMode(yellowLedPin, OUTPUT);<br />
+             Serial.begin(9600);<br />
+            }<br />
+            void loop() {<br />
+             sensorValue = analogRead(sensorPin); <br />
+             sensorValue = (sensorValue/1023)*255;<br />
+             analogWrite(greenLedPin, 255-sensorValue);<br />
+             analogWrite(yellowLedPin, sensorValue);<br />
+             Serial.println(sensorValue); <br />
+             delay(200); <br />
+            }</p>
+        <h2>Exercise 7</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8KA5PPZ_io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6glZei8yw44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>#include "LedControl.h"<br />
+            
+            LedControl lc = LedControl(12,11,10,1); <br />
+            void setup() {<br />
+             lc.shutdown(0,false); <br />
+             lc.setIntensity(0,8); <br />
+             lc.clearDisplay(0); <br />
+            }<br />
+            void loop(){<br />
+            lc.setRow(0,0,10000001); <br />
+             lc.setRow(0,1,B01000010);<br />
+             lc.setRow(0,2,B00100100); <br />
+             lc.setRow(0,3,B00011000);<br />
+             lc.setRow(0,4,B00011000);<br />
+             lc.setRow(0,5,B00011000);<br />
+             lc.setRow(0,6,B00011000);<br />
+             lc.setRow(0,7,B00011000);<br />
+             delay(1000);<br />
+             lc.setRow(0,0,11000011); <br />
+             lc.setRow(0,1,B11000011); <br />
+             lc.setRow(0,2,B10100101);<br />
+             lc.setRow(0,3,B10100101);<br />
+             lc.setRow(0,4,B10111101);<br />
+             lc.setRow(0,5,B10011001);<br />
+             lc.setRow(0,6,B10000001);<br />
+             lc.setRow(0,7,B00000000);<br />
+             delay(1000);<br />
+            }</p>
+        <h2>Exercise 8</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FZw9bPwnk_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>float sensorValue = 0; <br />
+            int sensorPin = A0; <br />
+            int greenLedPin = 10;<br />
+            int yellowLedPin = 9;<br />
+            
+            void setup() {<br />
+             pinMode(sensorPin, INPUT);<br />
+             pinMode(greenLedPin, OUTPUT);<br />
+             pinMode(yellowLedPin, OUTPUT);<br />
+             Serial.begin(9600);<br />
+            }<br />
+            void loop() {<br />
+             sensorValue = analogRead(sensorPin); <br />
+             sensorValue = (sensorValue/30)*255;<br />
+             analogWrite(greenLedPin, sensorValue);<br />
+             analogWrite(yellowLedPin, sensorValue);<br />
+             Serial.println(sensorValue); <br />
+             delay(200); <br />
+            }</p>
+        <h2>Exercise 9</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vrkS1RBr4XY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+        <p>int speakerPin = 8;<br />
+            void setup() {<br />
+             pinMode(speakerPin, OUTPUT);<br />
+            }<br />
+            void loop() {<br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 330, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 262, 800); <br />
+             delay(1000); <br />
+             <br />
+             tone(speakerPin, 262, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800);<br />
+             delay(90); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250);<br />
+             tone(speakerPin, 392, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(250);<br />
+             tone(speakerPin, 392, 800); <br />
+             delay(1000); <br />
+             <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(250);<br />
+             tone(speakerPin, 466, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 466, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 466, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(1000); <br />
+             <br />
+             tone(speakerPin, 349, 1000); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(5000);<br />
+            }</p>
+        <h2>Pokemon theme song</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wKQxPcILRRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <p>Pint speakerPin = 8;<br />
+            void setup() {<br />
+             pinMode(speakerPin, OUTPUT);<br />
+            }<br />
+            void loop() {<br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(90);<br />
+             tone(speakerPin, 330, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 262, 800); <br />
+             delay(1000); <br />
+             <br />
+             tone(speakerPin, 262, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(1000); <br />
+             <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 466, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 466, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 466, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(1000); <br />
+             <br />
+             tone(speakerPin, 349, 1000); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(90); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 392, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 349, 800); <br />
+             delay(250); <br />
+             tone(speakerPin, 440, 800); <br />
+             delay(5000); <br />
+            }</p>
+        <h2>Exercise 11</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UM2KiL6Rz48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>float sensorValue = 0; <br />
+            int sensorPin = A0;<br />
+            int greenLedPin = 10; <br />
+            
+            void setup() {<br />
+              Serial.begin(9600); <br />
+              pinMode(sensorPin, INPUT); <br />
+              pinMode(greenLedPin, OUTPUT); <br />
+            }<br />
+            
+            void loop() {<br />
+             sensorValue = analogRead(sensorPin); <br />
+             sensorValue = (sensorValue/1023)*255; <br />
+             analogWrite(greenLedPin, sensorValue);<br />
+             Serial.println(sensorValue); <br />
+             delay(100); <br />
+            }</p>
+        <h2>Exercise 12</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IkXPmBQsLc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>import processing.serial.*;<br />
+
+            Serial myPort;<br />
+            String sensorReading="";<br />
+            void setup() {<br />
+             size(400, 400);<br />
+             myPort = new Serial(this, Serial.list()[0], 9600);<br />
+             myPort.bufferUntil('\n');<br />
+            }<br />
+            void draw() {<br />
+             background(255);<br />
+             fill(0);<br />
+             text("Sensor Reading: " + sensorReading, 20, 20);<br />
+             ellipse(width/2, height/2, float(sensorReading), float(sensorReading));<br />
+            }<br />
+            
+            void serialEvent (Serial myPort) {<br />
+             sensorReading = myPort.readStringUntil('\n');<br />
+            }</p>
+
+            <p>import processing.serial.*;<br />
+
+                Serial myPort;<br />
+                String sensorReading="";<br />
+                
+                void setup() {<br />
+                 size(400, 400);<br />
+                 myPort = new Serial(this, Serial.list()[0], 9600);<br />
+                 myPort.bufferUntil('\n');<br />
+                }<br />
+                
+                void draw() {<br />
+                 background(255);<br />
+                 fill(0);<br />
+                 text("Sensor Reading: " + sensorReading, 20, 20);<br />
+                 ellipse(width/2, height/2, float(sensorReading), float(sensorReading));<br />
+                }<br />
+                
+                void serialEvent (Serial myPort) {<br />
+                 sensorReading = myPort.readStringUntil('\n');<br />
+                }</p>
+        <h2>Exercise 13</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ini2VyeAJ70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>const int buttonPin = 2;  <br />   
+            const int ledPin =  13;    <br />  
+            
+            int buttonState = 1;      <br />   
+            
+            void setup() {<br />
+              
+              pinMode(ledPin, OUTPUT);<br />
+              
+              pinMode(buttonPin, INPUT);<br />
+            }<br />
+            
+            void loop() {<br />
+              
+              buttonState = digitalRead(buttonPin);<br />
+            
+              
+              if (buttonState == LOW) {<br />
+                
+                digitalWrite(ledPin, HIGH);<br />
+              } else {<br />
+                
+                digitalWrite(ledPin, LOW);<br />
+              }<br />
+            }</p>
+        <h2>Exercise 14</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TM7jIz88BpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>#include Servo.h><br />
+            Servo myServo;    <br />
+            int servoPin = 9; <br />
+            int pos = 0;      <br />
+            
+            void setup() {<br />
+              myServo.attach(servoPin); <br />
+            }<br />
+            
+            void loop() {<br />
+              for(pos = 0; pos &lt; 160; pos += 1){  <br />
+                myServo.write(pos);               <br />
+                delay(15);                     <br />   
+              }<br />
+              for(pos = 160; pos >= 80; pos -= 1){<br />
+                myServo.write(pos);               <br />
+                delay(15);                        <br />
+              }<br />
+              for(pos = 80; pos  &lt; 200; pos += 1){ <br />
+                myServo.write(pos);               <br />
+                delay(15);                        <br />
+              }<br />
+              for(pos = 200; pos >= 180; pos -= 1)
+                myServo.write(pos);               <br />
+                delay(15);                        <br />
+              }<br />
+              for(pos = 180; pos  &lt; 200; pos += 1){<br />
+                myServo.write(pos);               <br />
+                delay(15);                        <br />
+              }<br />
+              for(pos = 200; pos >= 180; pos -= 1)<br />
+                myServo.write(pos);               <br />
+                delay(15);                        <br />
+              }<br />
+              for(pos = 180; pos  &lt; 200; pos += 1){<br />
+                myServo.write(pos);               <br />
+                delay(15);                        <br />
+              }<br />
+              for(pos = 200; pos >= 1; pos -= 1){ <br />
+                myServo.write(pos);               <br />
+                delay(15);                        <br />
+              }<br />
+            }</p>
+        
+    <hr />
+    <h1 id="computervision">Computer Vision</h1>
+
+    <h2>Exercise 2F</h2>
+    <img src="images/exercise2F.png" alt="Image of exercise 2F in action" />
+    <p>void setup(){<br />
+        size(200,200);<br />
+        stroke(0,0,255);<br />
+        fill(0,0,255);<br />
+        ellipse(150,150,90,50);<br />
+        stroke(0,255,0);<br />
+        fill(0,255,0);<br />
+        ellipse(100,100,40,40); <br />
+        stroke(255,0,0);<br />
+        fill(255,0,0);<br />
+        ellipse(50,50,100,50);<br />
+       }<br />
+       
+       void draw(){}</p>
+    <h2>Exercise 2I</h2>
+    <img src="images/exercise2I.png" alt="Image of exercise 2I in action" />
+    <p>void setup(){<br />
+        size(200,200);<br />
+        stroke(0,0,255);<br />
+        fill(0,0,255);<br />
+        triangle(10,10,180,100,40,200);<br />
+        stroke(0,255,0);<br />
+        fill(0,155,155);<br />
+        quad(150,150,200,150,200,200,100,200); <br />
+        stroke(255,0,0);<br />
+        fill(155,0,155);<br />
+        rect(0,0,50,50);<br />
+        stroke(155,155,0);<br />
+        fill(155,155,0);<br />
+        line(0,200,200,0);<br />
+     }<br />
+     
+     void draw(){ }
+    </p>
+    <h2>Exercise 2O</h2>
+    <iframe id="vp1HGjJy" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1624551125&f=HGjJyG7nlu1KPQexakJ8PQ&d=0&m=p&r=360p&volume=0&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
+
+    <p>int diameter = 10;<br />
+        int red = 0;<br />
+        int green = 255;<br />
+        int blue = 0;<br />
+        int hoogte= 0;<br />
+        
+        void setup() {<br />
+         size(200,200);<br />
+         background (200,200,200);<br />
+         frameRate(15);<br />
+        }<br />
+        void draw() {<br />
+         fill(red);<br />
+         ellipse(100, 100, 100, 100);<br />
+         line(0,0,mouseX,mouseY);<br />
+         fill(red);<br />
+         rect(100,0,100,hoogte);<br />
+        }<br />
+        
+        void mouseMoved(){<br />
+          red = red + 5;<br />
+          if (red > 255) {<br />
+            red = 0;<br />
+          }<br />
+          hoogte = hoogte + 1;<br />
+          if (hoogte > 200) {<br />
+            hoogte = 0;<br />
+          }<br />
+        }</p>
+    <h2>Exercise 3B</h2>
+    <p>char val; <br />
+        int ledPin = 13; <br />
+        void setup() {<br />
+        pinMode(ledPin, OUTPUT); <br />
+        Serial.begin(9600); <br />
+        }<br />
+        void loop() {<br />
+        while (Serial.available()) { <br />
+        val = Serial.read();<br />
+        }<br />
+        if (val == 'H') { <br />
+        digitalWrite(ledPin, HIGH);<br />
+        }<br />
+        else {<br />
+        digitalWrite(ledPin, LOW); <br />
+        }<br />
+        delay(100);<br />
+        }</p>
+    <p>import processing.serial.*;<br />
+        Serial myPort; <br />
+        int val; <br />
+        void setup()<br />
+        {<br />
+        size(200, 200);<br />
+         String portName = Serial.list()[3]; <br />
+         myPort = new Serial(this, portName, 9600);<br />
+        }<br />
+        void draw() {<br />
+         background(255);<br />
+         if (mouseOverRect() == true) { <br />
+         fill(204); <br />
+         myPort.write('H'); <br />
+         }<br />
+         else { <br />
+         fill(0); <br />
+         myPort.write('L'); <br />
+         }<br />
+         rect(50, 50, 100, 100); <br />
+        }<br />
+        boolean mouseOverRect() { <br />
+         return ((mouseX >= 50) && (mouseX &lt;= 150) && (mouseY >= 50) && (mouseY &lt;= 150));
+        }</p>
+    <h2>Exercise 5C</h2>
+    <p>function setup() {<br />
+        createCanvas(400, 400);<br />
+      }<br />
+      
+      function draw() {<br />
+        if (mouseIsPressed) {<br />
+          fill(200,20,200);<br />
+        } else {<br />
+          fill(255,200,0);<br />
+        }<br />
+        ellipse(mouseX, mouseY, 80, 80);<br />
+      }</p>
+
+      <iframe src="https://editor.p5js.org/HeroNiewold/embed/xW1DuDBqe"></iframe>
+    <h2>Exercise 5E</h2>
+    <p>function setup() {<br />
+        createCanvas(400, 400);<br />
+      }<br />
+      
+      function draw() {<br />
+        if (p.length !== 0) {<br />
+            if (p[0].label == "open") {<br />
+              console.log("de hand is open");<br />
+              ellipse(300, 300, 80, 80);<br />
+            }<br />
+        }<br />
+        
+        if (p.length !== 0) {<br />
+            if (p[0].label == "closed") {<br />
+              console.log("de hand is gesloten");<br />
+              ellipse(100,100,80,80);<br />
+            }<br />
+        }<br />
+      }<br />
+        
+      var p = new Array();<br />
+        
+      const video = document.getElementById("myvideo");<br />
+      const canvas = document.getElementById("canvas");<br />
+      const context = canvas.getContext("2d");<br />
+      let trackButton = document.getElementById("trackbutton");<br />
+      let updateNote = document.getElementById("updatenote");<br />
+      
+      let isVideo = false;<br />
+      let model = null;<br />
+      
+      const modelParams = {<br />
+          flipHorizontal: true,   <br />
+          maxNumBoxes: 20,        <br />
+          iouThreshold: 0.5,      <br />
+          scoreThreshold: 0.6,    <br />
+      }<br />
+      
+      function startVideo() {<br />
+          handTrack.startVideo(video).then(function (status) {<br />
+              console.log("video started", status);<br />
+              if (status) {<br />
+                  updateNote.innerText = "Video started. Now tracking"<br />
+                  isVideo = true<br />
+                  runDetection()<br />
+              } else {<br />
+                  updateNote.innerText = "Please enable video"<br />
+              }<br />
+          });<br />
+      }<br />
+      
+      function toggleVideo() {<br />
+          if (!isVideo) {<br />
+              updateNote.innerText = "Starting video"<br />
+              startVideo();<br />
+          } else {<br />
+              updateNote.innerText = "Stopping video"<br />
+              handTrack.stopVideo(video)<br />
+              isVideo = false;<br />
+              updateNote.innerText = "Video stopped"<br />
+          }<br />
+      }<br />
+      
+      
+      
+      function runDetection() {<br />
+          model.detect(video).then(predictions => {<br />
+              p = predictions;<br />
+              //console.log("Predictions: ", predictions);<br />
+              model.renderPredictions(predictions, canvas, context, video);<br />
+              if (isVideo) {<br />
+                  requestAnimationFrame(runDetection);<br />
+              }<br />
+          });<br />
+      }<br />
+      
+      handTrack.load(modelParams).then(lmodel => {<br />
+          model = lmodel<br />
+          updateNote.innerText = "Loaded Model!"<br />
+          trackButton.disabled = false<br />
+      });<br />
+      </p>
+
+      <iframe id="handtrackcircles" src="https://editor.p5js.org/HeroNiewold/embed/IFdBveGX-"></iframe>
+    </main>
+</body>
+
+</HTML>

@@ -69,6 +69,18 @@ img {
     margin: 0;
     padding-top: 100px;
 }
+ul {
+    color: white;
+}
 li {
     list-style-type: none;
+   color: white;
+}
+#projectlabweek {
+    width: 80%;
+    height: 800px;
+}
+#numberthree {
+    margin: 0;
+    padding-top: 100px;
 }

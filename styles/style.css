@@ -77,10 +77,22 @@ li {
    color: white;
 }
 #projectlabweek {
-    width: 80%;
+    width: 80%  ;
     height: 800px;
 }
 #numberthree {
     margin: 0;
     padding-top: 100px;
+}
+@media only screen and (max-width: 768px) {
+main {
+    width: 80%;
+}
+h2 {
+    font-size: 14px;
+}
+ul {
+    padding-left: 0px;
+}
+
 }
